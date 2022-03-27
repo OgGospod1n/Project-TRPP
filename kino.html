@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая работа</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="body_kino">
+    <header>
+        <div id="logo" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+            <span>KINOTEMA</span>
+        </div>
+        <div id="about">
+            <a href="index.html" title="Главная" onclick="slowScroll('#html, body')">Главная</a>
+            <a href="kino.html"  title="Лучшие фильмы">Лучшие фильмы</a>
+            <a href="actors.html" title="Актёры">Актеры</a>
+            <a href="actresses.html" title="Актрисы">Актрисы</a>
+            <a href="feedback.html" title="Обратная связь">Обратная связь</a>
+        </div>
+    </header>
+    <div class="filmsearch_container">
+        <form class="form">
+          <input type="text" placeholder="Поиск фильма" class="filmsearch">
+          <button type="submit"></button>
+        </form>
+      </div>
+      <div class="container">
+          <div class="movies"></div>
+      </div>
+      <footer id="footer_kino">&#169 2021 The site was created by Artem Ivachev</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+    <script src="js/app.js"></script>
+ </body>
+ </html>
