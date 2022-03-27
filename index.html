@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINOTEMA</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="assets/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>KINOTEMA</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Главная" onclick="slowScroll('#html, body')">Главная</a>
+            <a href="kino.html"  title="Лучшие фильмы">Лучшие фильмы</a>
+            <a href="actors.html" title="Актёры">Актеры</a>
+            <a href="actresses.html" title="Актрисы">Актрисы</a>
+            <a href="feedback.html" title="Обратная связь">Обратная связь</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Добро пожаловать в Мир Кино!</h1>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>О сайте</h2>
+        </div>
+        <div class="text">
+            <span>KINOTEMA - индивидуальный проект, который начался с инстаграм-блога в конца 2019 года, продолжился телеграм-каналом в начале 2021 года и перешёл в конце 2021 года на более масштабное - Интернет-сайт. Вы окунётесь в Мир Кино, и получите море наслаждения, находясь на этом сайте. Вы сможете увидеть как лучшие фильмы на данный момент, так и рецензии и отзывы на них.</span>
+        </div>
+    </div>
+
+    <div id="overview">
+        <h2>Почувствуй разницу</h2>
+        <h4>Иногда стоит прислушаться к мнению людей</h4>
+
+        <div class="img">
+            <a href="reviews.html"><img src="https://avatars.mds.yandex.net/i?id=cdddab2517cf38d6bc0839e58ee8acec-5597454-images-thumbs&n=13" alt=""></a>
+            <span>Рецензии зрителей</span>
+        </div>
+        <div class="img">
+            <a href="myreviews.html"><img src="https://avatars.mds.yandex.net/i?id=011f578e54b2dec1feecf55a7c61a858-4449234-images-thumbs&n=13" alt=""></a>
+            <span>Мои рецензии</span>
+        </div>
+    </div>
+
+    <div id="styles_icon">
+            <a href="https://t.me/kino_temaa"><img src="assets/telegram.png" alt="" width="30px" height="30px"></a>        
+            <a href="https://instagram.com"><img src="assets/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://vk.com/iva4ev"><img src="assets/vk.png" alt="" width="30px" height="30px"></a>
+    </div>
+
+        <footer>&#169 2021 The site was created by Artem Ivachev</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
