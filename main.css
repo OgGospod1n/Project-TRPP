@@ -257,13 +257,12 @@ header.fixed #logo {
 #contacts {
     float: left;
     padding-bottom: 40px;
-    padding-top: 10px;
     width:100%;
-    height:1000px;
-    background-image: url(https://img2.akspic.ru/originals/8/6/8/1/5/151868-zheleznyj_chelovek-tor-kinovselennaya_marvel-tanos-mstiteli-2048x1152.jpg);
+    height:600px;
     background-blend-mode: multiply;
-    background-color: #605f32d4;
     background-size: cover;
+    margin-top: -150px;
+    margin-bottom: 100px;
 }
 
 h1, h2, h3, h4, h5 {
