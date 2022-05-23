@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    outline: none;
+    text-decoration: none;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #fafafa;
+    font-family: 'Trebuchet MS', 'Helvetica';
+}
+
+/*Шапка сайта*/
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Anton', sans-serif;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width:30%;
+        font-size: 1.1em;
+    }
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width:100%;
+        font-size: 1.5em;
+    }
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+#about > a{color:#fff}
+
+#about > a:hover {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+#about > a:not(:last-child) {
+    margin-right: 7% ;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: white;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+.fixed #about a {color:#343434}
+.fixed #about a:hover {color:#756c6c}
+
+/*Главный блок на сайте*/
+
+#top {
+    width:100%;
+    height:1000px;
+    background-image:url(https://cdn.lifehacker.ru/wp-content/uploads/2020/01/41-Avengers-Endgame_1580219304.jpg);
+    background-blend-mode: multiply;
+    background-color: slateblue;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color:#fff;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+        height:1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width:651px) {
+    #top {
+        font-size: 2em;
+        height:600px;
+    }
+}
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.3em;
+        padding-top: 50%;
+        height:500px;
+    }
+}
+
+#zagolovok h1 {
+    font-size: 3em;
+    padding-top: 80px;
+    text-align: center;
+    color: snow;
+}
+
+@media (max-width:650px) {
+    #zagolovok h1{
+        font-size: 2em;
+        padding-top: 40%;
+    }
+}
+
+#zagolovok h5 {
+    font-size: 1em;
+    text-align: center;
+    color: snow;
+}
+
+/*Блок с возможностями*/
+#main {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 100px;
+}
+
+@media (min-width: 1401px) {
+    #main {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #main {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+#main span {
+    color: slateblue;
+}
+.myreviews {
+    background-image:url(https://www.kinobusiness.com/upload/iblock/bd7/rev_1_JOK_12470_High_Res_JPEG_novyy-razmer.jpeg);
+    background-blend-mode: multiply;
+    background-color: #484653;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#next {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 300px;
+}
+
+@media (min-width: 1401px) {
+    #next {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #next {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #next div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#next div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#next h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#next span {
+    color: slateblue;
+}
+
+/**/
+
+#next__ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #next__ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #next__ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #next__ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#next__ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#next__ h2 {
+    font-size: 2em;
+    padding-left: 75px;
+    padding-bottom: 10px;
+}
+#next__ span {
+    color: slateblue;
+}
+
+/**/
+#__next__ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #__next__ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #__next__ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #__next__ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#__next__ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#__next__ h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#__next__ span {
+    color: slateblue;
+}
+
+/**/
+#__next {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #__next {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #__next {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #__next div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#__next div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#__next h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#__next span {
+    color: slateblue;
+}
+
+/**/
+#_next_ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #_next_ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #_next_ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #_next_ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#_next_ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#_next_ h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+#_next_ span {
+    color: slateblue;
+}
+
+/**/
+
+#next___ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #next___ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #next___ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #next___ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#next___ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#next___ h2 {
+    font-size: 2em;
+    padding-left: 55px;
+    padding-bottom: 10px;
+}
+#next___ span {
+    color: slateblue;
+}
+
+/**/
+
+#_next___ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #_next___ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #_next___ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #_next___ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#_next___ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#_next___ h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#_next___ span {
+    color: slateblue;
+}
+
+/**/
+#main__ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #main__ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #main__ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main__ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main__ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main__ h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#main__ span {
+    color: slateblue;
+}
+footer {
+    text-align: center;
+    font-family: 'Anton';
+    color:white;
+}
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight:bolder;
+    font-size: 1.1em;
+    opacity: 0.7;
+}
+
+/**/
+#____main__ {
+    padding: 100px 20%;
+    width: 70%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size:1.3em;
+    margin-top: 350px;
+}
+
+@media (min-width: 1401px) {
+    #____main__ {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 1400px) {
+    #____main__ {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #____main__ div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#____main__ div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#____main__ h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#____main__ span {
+    color: slateblue;
+}
