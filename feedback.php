@@ -12,7 +12,7 @@ $name = trim($name);
 $email = trim($email);
 $message = trim($message);
 
-if (mail("artem-272002@mail.ru", "Заявка с сайта", "Артем:".$name.". E-mail: ".$email ,"Отправить ".$message "From: example2@mail.ru.\r\n"))
+if (mail("artem-272002@mail.ru", "Заявка с сайта", "Артем:".$name.". E-mail: ".$email ,"Отправить ".$message "From: https://oggospod1n.github.io/Project-TRPP/.\r\n"))
  {     echo "Сообщение успешно отправлено";
 } else {
     echo "При отправке сообщения возникли ошибки";
